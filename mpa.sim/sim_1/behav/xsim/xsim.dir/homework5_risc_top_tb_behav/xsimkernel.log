@@ -1,0 +1,4 @@
+Running: xsim.dir/homework5_risc_top_tb_behav/xsimk.exe -simmode gui -wdb homework5_risc_top_tb_behav.wdb -simrunnum 0 -socket 55497
+Design successfully loaded
+Design Loading Memory Usage: 6704 KB (Peak: 6704 KB)
+Design Loading CPU Usage: 15 ms

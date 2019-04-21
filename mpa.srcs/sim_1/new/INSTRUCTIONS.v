@@ -1,0 +1,1 @@
+parameter NOP = 32'b0;
