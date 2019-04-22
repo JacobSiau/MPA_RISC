@@ -16,16 +16,31 @@ module homework5_risc_instruction_fetch_module(
     
     initial
         begin
-            INST_MEM[0] = {NOP,  R0,  R0,  R0, 10'b0};
-            INST_MEM[1] = {MOV,  R1,  R5,      15'b0};
-            INST_MEM[2] = {ADD,  R2,  R1,  R6, 10'b0};
-            INST_MEM[3] = {ADD,  R3,  R1,  R2, 10'b0};
-            INST_MEM[4] = {NOP,  R0,  R0,  R0, 10'b0};
-            INST_MEM[5] = {NOP,  R0,  R0,  R0, 10'b0};
-            INST_MEM[6] = {NOP,  R0,  R0,  R0, 10'b0};
-            for (i = 7; i < 128; i = i + 1) begin
+            INST_MEM[0] = {NOP,  R0,  R0,  R0, 10'b0 };
+            INST_MEM[1] = {BZ,   R0,  R0,      15'b000000000010010};
+            INST_MEM[2] = {MOV,  R2,  R3,      15'b0 };
+            INST_MEM[3] = {MOV,  R1,  R2,      15'b0 };
+            for (i = 4; i < 20; i = i + 1) begin
+                INST_MEM[i] = {NOP,  R0,  R0,  R0, 10'b0 };
+            end
+            INST_MEM[20] = {MOV,  R5,  R6,      15'b0 };
+            INST_MEM[21] = {NOP,  R0,  R0,  R0, 10'b0 };
+            INST_MEM[22] = {NOP,  R0,  R0,  R0, 10'b0 };
+            INST_MEM[23] = {NOP,  R0,  R0,  R0, 10'b0 };
+            INST_MEM[24] = {NOP,  R0,  R0,  R0, 10'b0 };
+            for (i = 25; i < 128; i = i + 1) begin
                 INST_MEM[i] = {XXX, RX,  RX,  RX, 10'bX};
             end
+//            INST_MEM[0] = {NOP,  R0,  R0,  R0, 10'b0};
+//            INST_MEM[1] = {MOV,  R1,  R5,      15'b0};
+//            INST_MEM[2] = {ADD,  R2,  R1,  R6, 10'b0};
+//            INST_MEM[3] = {ADD,  R3,  R1,  R2, 10'b0};
+//            INST_MEM[4] = {NOP,  R0,  R0,  R0, 10'b0};
+//            INST_MEM[5] = {NOP,  R0,  R0,  R0, 10'b0};
+//            INST_MEM[6] = {NOP,  R0,  R0,  R0, 10'b0};
+//            for (i = 7; i < 128; i = i + 1) begin
+//                INST_MEM[i] = {XXX, RX,  RX,  RX, 10'bX};
+//            end
 //            INST_MEM[0]  = {NOP, R0,  R0,  R0, 10'b0}; 
 //            INST_MEM[1]  = {ADD, R1,  R2,  R3, 10'b0}; 
 //            INST_MEM[2]  = {NOP, R0,  R0,  R0, 10'b0};

@@ -7,14 +7,17 @@ module homework5_risc_branch_logic_module(
     input Z,
     input [31:0] BrA,
     input [31:0] RAA,
-    output reg [7:0] PC = 8'b0
+    output reg [7:0] PC = 8'b0,
+    output reg branchBeingTaken = 1'b0
     );
     
     reg [1:0] logic = 2'b0;
     
+    // MUXC
     always @(*) begin
     
         logic <= {BS[1], (((PS ^ Z)|BS[1])&BS[0])};
+        
         case (logic)
             2'd0: PC <= PC_1;
             2'd1: PC <= BrA[7:0];
@@ -23,6 +26,8 @@ module homework5_risc_branch_logic_module(
             default: PC <= 8'bX;
          endcase
          
+         branchBeingTaken <= |logic;
+      
     end
     
 endmodule

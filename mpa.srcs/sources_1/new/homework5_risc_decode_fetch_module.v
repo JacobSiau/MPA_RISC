@@ -128,7 +128,9 @@ module homework5_risc_decode_fetch_module(
         else begin 
             case(MB)
                 1'b0: BUS_B <= B_DATA;
-                1'b1: BUS_B <= CS ? {{18{IM_reg[14]}}, IM_reg} : {{18{1'b0}}, IM_reg}; // constant unit
+                1'b1: begin 
+                    BUS_B <= CS ? {{17{IM_reg[14]}}, IM_reg[14:0]} : {{17{1'b0}}, IM_reg[14:0]}; // constant unit
+                end
                 default: BUS_B <= 32'bX;
             endcase
         end

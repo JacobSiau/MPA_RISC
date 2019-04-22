@@ -40,6 +40,9 @@ module homework5_risc_top(
     wire [7:0] PC_2;
     wire [31:0] IR;
     
+    // branch prediction line
+    wire branchBeingTaken;
+    
     ////////////////////////////////////////////////////////////
     // REGFILE
     wire [4:0] AA;
@@ -182,7 +185,8 @@ module homework5_risc_top(
         .Z(ZVNC[3]), 
         .BrA(BrA),
         .RAA(RAA),
-        .PC(PC)
+        .PC(PC),
+        .branchBeingTaken(branchBeingTaken)
     );
     ////////////////////////////////////////////////////////////
     
@@ -201,8 +205,8 @@ module homework5_risc_top(
             PC_reg <= PC;
             PC_1_reg <= PC_1;
             PC_2_reg <= PC_2;
-            IR_reg <= IR;
-            {RW_reg, DA_reg, MD_reg, BS_reg, PS_reg, MW_reg, FS_reg, SH_reg} <= {RW, DA, MD, BS, PS, MW, FS, SH};
+            IR_reg <= IR & (~branchBeingTaken);
+            {RW_reg, DA_reg, MD_reg, BS_reg, PS_reg, MW_reg, FS_reg, SH_reg} <= {RW & (~branchBeingTaken), DA, MD, BS & (~branchBeingTaken), PS, MW & (~branchBeingTaken), FS, SH};
             {BUS_A_reg, BUS_B_reg} <= {BUS_A, BUS_B};
             {RW_1_reg, DA_1_reg, MD_1_reg} <= {RW_1, DA_1, MD_1};
             {NXORV_reg, FOUT_reg, DOUT_reg, ZVNC_reg} <= {NXORV, FOUT, DOUT, ZVNC};
