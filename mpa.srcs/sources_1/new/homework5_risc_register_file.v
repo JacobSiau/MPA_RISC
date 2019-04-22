@@ -28,8 +28,10 @@ module homework5_risc_register_file(
         if(RST)
             for(i = 0; i < 32; i = i + 1)
                 REGFILE[i] = i;                                    // clear all regs on reset
-        else if(RW)                                                        // if not clearing, then write
-            REGFILE[DA] <= DIN;        
+        else if(RW) begin 
+            if (DA != 5'b0)                                            
+                REGFILE[DA] <= DIN;    
+        end    
     end
 
 endmodule

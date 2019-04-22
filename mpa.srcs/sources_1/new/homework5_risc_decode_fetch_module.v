@@ -25,7 +25,7 @@ module homework5_risc_decode_fetch_module(
     output reg [4:0] BA = 5'b0
     );
     
-    `include "OPCODES.vh"
+    `include "INSTRUCTION_PATTERNS.vh"
    
     
     reg [6:0] OPCODE_reg = 7'b0;

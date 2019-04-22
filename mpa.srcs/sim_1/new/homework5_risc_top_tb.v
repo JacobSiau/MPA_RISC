@@ -15,10 +15,10 @@ initial begin
     RST <= 0;
 //    #10
 //    RST = 0;
-    #5 
-    RST <= 1;
-    #5
-    RST <= 0;
+//    #5 
+//    RST <= 1;
+//    #5
+//    RST <= 0;
 end
 
 always 

@@ -6,7 +6,9 @@ module homework5_risc_instruction_fetch_module(
     output [31:0] INST  // instruction that is fetched
     );
     
-    `include "INSTRUCTION_MEM.vh"
+    // `include "INSTRUCTION_MEM.vh"
+    
+    `include "INSTRUCTION_PATTERNS.vh" 
     
     integer i;
 
@@ -14,59 +16,48 @@ module homework5_risc_instruction_fetch_module(
     
     initial
         begin
-            INST_MEM[0] = INST0;
-            INST_MEM[1] = INST1;
-            INST_MEM[2] = INST0;
-            INST_MEM[3] = INST2;
-            INST_MEM[4] = INST0;
-            INST_MEM[5] = INST3;
-            INST_MEM[6] = INST0;
-            INST_MEM[7] = INST4;
-            INST_MEM[8] = INST0;
-            INST_MEM[9] = INST5;
-            INST_MEM[10] = INST0;
-            INST_MEM[11] = INST6;
-            INST_MEM[12] = INST0;
-            INST_MEM[13] = INST7;
-            INST_MEM[14] = INST0;
-            INST_MEM[15] = INST8;
-            INST_MEM[16] = INST0;
-            INST_MEM[17] = INST9;
-            INST_MEM[18] = INST0;
-            INST_MEM[19] = INST10;
-            INST_MEM[20] = INST0;
-            INST_MEM[21] = INST11;
-            INST_MEM[22] = INST0;
-            INST_MEM[23] = INST12;
-            INST_MEM[24] = INST0;
-            INST_MEM[25] = INST13;
-            INST_MEM[26] = INST0;
-            INST_MEM[27] = INST14;
-            INST_MEM[28] = INST0;
-            INST_MEM[29] = INST15;
-            INST_MEM[30] = INST0;
-            INST_MEM[31] = INST16;
-            INST_MEM[32] = INST0;
-            INST_MEM[33] = INST17;
-            INST_MEM[34] = INST0;
-            INST_MEM[35] = INST18;
-            INST_MEM[36] = INST0;
-            INST_MEM[37] = INST19;
-            INST_MEM[38] = INST0;
-            INST_MEM[39] = INST20;
-            INST_MEM[40] = INST0;
-            INST_MEM[41] = INST21;
-            INST_MEM[42] = INST0;
-            INST_MEM[43] = INST22;
-            INST_MEM[44] = INST0;
-            INST_MEM[45] = INST23;
-            INST_MEM[46] = INST0;
-            INST_MEM[47] = INST24;
-            INST_MEM[48] = INST0;
-            for(i=49; i< 128; i = i+1)
-                INST_MEM[i] = INSTX;
-//              for(i = 2; i < 128; i = i + 1)
-//                  INST_MEM[i] = INSTX;
+            INST_MEM[0]  = {NOP, R0,  R0,  R0, 10'b0}; 
+            INST_MEM[1]  = {ADD, R1,  R2,  R3, 10'b0}; 
+            INST_MEM[2]  = {NOP, R0,  R0,  R0, 10'b0};
+            INST_MEM[3]  = {SUB, R2,  R6,  R2, 10'b0};
+            INST_MEM[4]  = {NOP, R0,  R0,  R0, 10'b0};
+            INST_MEM[5]  = {SLT, R1,  R0,  R6, 10'b0};
+            INST_MEM[6]  = {NOP, R0,  R0,  R0, 10'b0};
+            INST_MEM[7]  = {AND, R1,  R2,  R3, 10'b0};
+            INST_MEM[8]  = {NOP, R0,  R0,  R0, 10'b0};
+            INST_MEM[9]  = {OR,  R1,  R2,  R3, 10'b0};
+            INST_MEM[10] = {NOP, R0,  R0,  R0, 10'b0};
+            INST_MEM[11] = {XOR, R1,  R2,  R3, 10'b0};
+            INST_MEM[12] = {NOP, R0,  R0,  R0, 10'b0};
+            INST_MEM[13] = {ST,  R0,  R6,  R1, 10'b0};
+            INST_MEM[14] = {NOP, R0,  R0,  R0, 10'b0};
+            INST_MEM[15] = {LD,  R7,  R6,      15'b0};
+            INST_MEM[16] = {NOP, R0,  R0,  R0, 10'b0};
+            INST_MEM[17] = {ADI, R1,  R6,      15'b1};
+            INST_MEM[18] = {NOP, R0,  R0,  R0, 10'b0};
+            INST_MEM[19] = {SBI, R1,  R6,      15'b1};
+            INST_MEM[20] = {NOP, R0,  R0,  R0, 10'b0};
+            INST_MEM[21] = {NOT, R10, R1,      15'b0};
+            INST_MEM[22] = {NOP, R0,  R0,  R0, 10'b0};
+            INST_MEM[23] = {ANI, R11, R6,      15'b1};
+            INST_MEM[24] = {NOP, R0,  R0,  R0, 10'b0};
+            INST_MEM[25] = {ORI, R12, R6,      15'b0};
+            INST_MEM[26] = {NOP, R0,  R0,  R0, 10'b0};
+            INST_MEM[27] = {XRI, R13, R6,      15'b0};
+            INST_MEM[28] = {NOP, R0,  R0,  R0, 10'b0};
+            INST_MEM[29] = {AIU, R14, R6,      15'b1};
+            INST_MEM[30] = {NOP, R0,  R0,  R0, 10'b0};
+            INST_MEM[31] = {SIU, R15, R6,      15'b1};
+            INST_MEM[32] = {NOP, R0,  R0,  R0, 10'b0};
+            INST_MEM[33] = {MOV, R16, R6,      15'b0};
+            INST_MEM[34] = {NOP, R0,  R0,  R0, 10'b0};
+            INST_MEM[35] = {LSL, R17, R6,      15'b1};
+            INST_MEM[36] = {NOP, R0,  R0,  R0, 10'b0};
+            INST_MEM[37] = {LSR, R18, R6,      15'b1};
+            INST_MEM[38] = {NOP, R0,  R0,  R0, 10'b0};
+            for (i = 39; i < 128; i = i + 1) begin
+                INST_MEM[i] = {XXX, RX,  RX,  RX, 10'bX};
+            end
         end
         
      assign PC_1 = PC + 8'b1;

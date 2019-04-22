@@ -4,4 +4,20 @@ Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 594a3ffdf2
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.homework5_risc_register_file
+Compiling module xil_defaultlib.homework5_risc_instruction_fetch...
+Compiling module xil_defaultlib.homework5_risc_decode_fetch_modu...
+Compiling module xil_defaultlib.homework5_risc_alu
+Compiling module xil_defaultlib.homework5_risc_barrel_shifter
+Compiling module xil_defaultlib.homework5_risc_function_unit
+Compiling module xil_defaultlib.homework5_risc_data_memory
+Compiling module xil_defaultlib.homework5_risc_execute_module
+Compiling module xil_defaultlib.homework5_risc_writeback_module
+Compiling module xil_defaultlib.homework5_risc_branch_logic_modu...
+Compiling module xil_defaultlib.homework5_risc_top
+Compiling module xil_defaultlib.homework5_risc_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot homework5_risc_top_tb_behav
