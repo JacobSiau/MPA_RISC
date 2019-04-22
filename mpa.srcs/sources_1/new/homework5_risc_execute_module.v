@@ -25,7 +25,8 @@ module homework5_risc_execute_module(
     output NXORV,
     output [3:0] ZVNC,
     output [31:0] FOUT,
-    output [31:0] DOUT
+    output [31:0] DOUT,
+    output reg [31:0] BUS_DD
     );
     
     wire Z;
@@ -35,6 +36,7 @@ module homework5_risc_execute_module(
     
     ////////////////////////////////////////////////////////////
     // FUNCTION UNIT
+    wire [31:0] FOUT_w;
     homework5_risc_function_unit MFU (
         .A(A),
         .B(B),
@@ -44,19 +46,20 @@ module homework5_risc_execute_module(
         .V(V),
         .N(N),
         .Z(Z),
-        .F(FOUT)
+        .F(FOUT_w)
     );
     ////////////////////////////////////////////////////////////
     
     ////////////////////////////////////////////////////////////
     // DATA MEMORY
+    wire [31:0] DOUT_w;
     homework5_risc_data_memory DATAMEM (
         .CLK(CLK),
         .RST(RST),
         .MW(MW),
         .MEM_ADDR(A[5:0]),
         .MEM_DIN(B),
-        .MEM_DOUT(DOUT)
+        .MEM_DOUT(DOUT_w)
     );
     ////////////////////////////////////////////////////////////
     
@@ -69,6 +72,35 @@ module homework5_risc_execute_module(
     assign MD_1 = MD;
     assign NXORV = N ^ V;
     assign ZVNC = {Z, V, N, C};
+    assign DOUT = DOUT_w;
+    assign FOUT = FOUT_w;
     ////////////////////////////////////////////////////////////
     
+    ////////////////////////////////////////////////////////////
+    // MUX D'
+    always @(*) begin
+        case(MD)
+            2'b00: BUS_DD <= FOUT_w;
+            2'b01: BUS_DD <= DOUT_w;
+            2'b10: BUS_DD <= {31'b0, N^V};
+            default: BUS_DD <= 32'bX;
+        endcase
+    end
+    ////////////////////////////////////////////////////////////
+    
+    
+    
+    
 endmodule
+
+
+
+
+
+
+
+
+
+
+
+

@@ -81,11 +81,17 @@ module homework5_risc_top(
     wire [4:0] SH;
     wire [31:0] BUS_A;
     wire [31:0] BUS_B;
+    wire HA;
+    wire HB;
+    wire [31:0] BUS_DD;
     homework5_risc_decode_fetch_module DOF (
         .PC_1(PC_1_reg),
         .IR(IR_reg),
         .A_DATA(AOUT),
         .B_DATA(BOUT),
+        .HA(HA),
+        .HB(HB),
+        .BUS_DD(BUS_DD),
         .PC_2(PC_2),
         .RW(RW),
         .DA(DA),
@@ -99,6 +105,21 @@ module homework5_risc_top(
         .BUS_B(BUS_B),
         .AA(AA),
         .BA(BA)
+    );
+    ////////////////////////////////////////////////////////////
+    
+        ////////////////////////////////////////////////////////////
+    // DATA FORWARDING MODULE
+    homework5_risc_data_forwarding_module DATA_FORWARD (
+        .RW(RW_reg),
+        .DA(DA_reg),
+        .MD(MD_reg),
+        .MA(IR_reg[1]),
+        .MB(IR_reg[2]),
+        .AA(AA),
+        .BA(BA),
+        .HA(HA),
+        .HB(HB)
     );
     ////////////////////////////////////////////////////////////
     
@@ -135,7 +156,8 @@ module homework5_risc_top(
         .NXORV(NXORV),
         .ZVNC(ZVNC),
         .FOUT(FOUT),
-        .DOUT(DOUT)
+        .DOUT(DOUT),
+        .BUS_DD(BUS_DD)
     );
     ////////////////////////////////////////////////////////////
     

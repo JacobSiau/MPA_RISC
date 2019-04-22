@@ -8,6 +8,7 @@ verilog xil_defaultlib  -i "../../../../mpa.srcs/sim_1" -i "../../../../mpa.srcs
 "../../../../mpa.srcs/sources_1/new/homework5_risc_alu.v" \
 "../../../../mpa.srcs/sources_1/new/homework5_risc_barrel_shifter.v" \
 "../../../../mpa.srcs/sources_1/new/homework5_risc_branch_logic_module.v" \
+"../../../../mpa.srcs/sources_1/new/homework5_risc_data_forwarding_module.v" \
 "../../../../mpa.srcs/sources_1/new/homework5_risc_data_memory.v" \
 "../../../../mpa.srcs/sources_1/new/homework5_risc_decode_fetch_module.v" \
 "../../../../mpa.srcs/sources_1/new/homework5_risc_execute_module.v" \

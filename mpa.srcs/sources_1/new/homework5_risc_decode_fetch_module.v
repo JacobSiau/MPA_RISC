@@ -6,6 +6,11 @@ module homework5_risc_decode_fetch_module(
     input [31:0] A_DATA,
     input [31:0] B_DATA,
     
+    // inputs from data forwarding
+    input HA,
+    input HB,
+    input [31:0] BUS_DD,
+    
     output [7:0] PC_2,
     
     // outputs from IR
@@ -101,30 +106,33 @@ module homework5_risc_decode_fetch_module(
         
     end
     
-    // MUXA/MUXB
+    // MUXA
     always @(*) begin
-        // MUXA
-        case(MA) 
-            1'b0: BUS_A <= A_DATA;
-            1'b1: BUS_A <= {24'b0, PC_1};
-            default: BUS_A <= 32'bX;
-        endcase
-        
-        // MUXB
-        case(MB) 
-            1'b0: BUS_B <= B_DATA;
-            1'b1: BUS_B <= CS ? {{18{IM_reg[14]}}, IM_reg} : {{18{1'b0}}, IM_reg}; // constant unit
-            default: BUS_B <= 32'bX;
-        endcase
+        if (HA) begin
+            BUS_A <= BUS_DD;
+        end
+        else begin
+            case(MA) 
+                1'b0: BUS_A <= A_DATA;
+                1'b1: BUS_A <= {24'b0, PC_1};
+                default: BUS_A <= 32'bX;
+            endcase
+        end
     end
     
-    
-    
-    
-    
-    
-    
-    
+    // MUXB
+    always @(*) begin
+        if (HB) begin
+            BUS_B <= BUS_DD;
+        end
+        else begin 
+            case(MB)
+                1'b0: BUS_B <= B_DATA;
+                1'b1: BUS_B <= CS ? {{18{IM_reg[14]}}, IM_reg} : {{18{1'b0}}, IM_reg}; // constant unit
+                default: BUS_B <= 32'bX;
+            endcase
+        end
+    end
     
 endmodule
 
