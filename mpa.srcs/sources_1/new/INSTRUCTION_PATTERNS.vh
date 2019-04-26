@@ -1,6 +1,8 @@
 //`ifndef _INSTRUCTION_PATTERNS_VH_
 //`define _INSTRUCTION_PATTERNS_VH_
-parameter NOP = 7'b0000000;
+// parameter NOP = 7'b0000000;
+parameter NOP = 32'b0;
+parameter XXX = 32'bX;
 parameter ADD = 7'b0000010;
 parameter SUB = 7'b0000101;
 parameter SLT = 7'b1100101;
@@ -20,12 +22,24 @@ parameter SIU = 7'b1000101;
 parameter MOV = 7'b1000000;
 parameter LSL = 7'b0110000;
 parameter LSR = 7'b0110001;
+parameter ASL = 7'b0110010;
+parameter ASR = 7'b0110011;
+parameter ROL = 7'b0110100;
+parameter ROR = 7'b0110101;
+parameter RLC = 7'b0110110; 
+parameter RRC = 7'b0110111;
 parameter JMR = 7'b1100001;
 parameter BZ  = 7'b0100000;
 parameter BNZ = 7'b1100000;
 parameter JMP = 7'b1000100;
 parameter JML = 7'b0000111;
-parameter XXX = 7'bXXXXXXX;
+// parameter XXX = 7'bXXXXXXX;
+parameter TESTLSB = 5'b00101; // R5
+parameter COUNT = 5'b01101; // R13
+parameter NEGMASK = 5'b01110; // R14
+parameter A = 5'b01100; // R12
+parameter B = 5'b10100;
+parameter Q = 5'b10101;
 parameter R0  = 5'b00000;
 parameter R1  = 5'b00001;
 parameter R2  = 5'b00010;

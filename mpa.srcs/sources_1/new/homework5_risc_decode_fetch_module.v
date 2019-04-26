@@ -89,6 +89,18 @@ module homework5_risc_decode_fetch_module(
                 {RW, MD, BS, PS, MW, FS, MB, MA, CS} = 15'b1_00_00_0_0_10000_0_0_0;
             LSR: 
                 {RW, MD, BS, PS, MW, FS, MB, MA, CS} = 15'b1_00_00_0_0_10001_0_0_0;
+            ASL: 
+                {RW, MD, BS, PS, MW, FS, MB, MA, CS} = 15'b1_00_00_0_0_10010_0_0_0;
+            ASR: 
+                {RW, MD, BS, PS, MW, FS, MB, MA, CS} = 15'b1_00_00_0_0_10011_0_0_0;
+            ROL: 
+                {RW, MD, BS, PS, MW, FS, MB, MA, CS} = 15'b1_00_00_0_0_10100_0_0_0;
+            ROR: 
+                {RW, MD, BS, PS, MW, FS, MB, MA, CS} = 15'b1_00_00_0_0_10101_0_0_0;
+            RLC: 
+                {RW, MD, BS, PS, MW, FS, MB, MA, CS} = 15'b1_00_00_0_0_10110_0_0_0;
+            RRC: 
+                {RW, MD, BS, PS, MW, FS, MB, MA, CS} = 15'b1_00_00_0_0_10111_0_0_0;
             JMR: 
                 {RW, MD, BS, PS, MW, FS, MB, MA, CS} = 15'b0_00_10_0_0_00000_0_0_0;
             BZ: 

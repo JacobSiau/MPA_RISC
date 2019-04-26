@@ -43,10 +43,10 @@ module homework5_risc_alu(
                     default: // shouldn't get here 
                         {C, FOUT} = 33'bX;
                 endcase
-            
+
         endcase // Mode select
 
-        V <= (!(A[31]^B[31]))^(FOUT[31]); // V flag depends only on arithmetic operations (S[2] is 0)
+        V <= (A[31] == B[31]) ? 1'b0 : (~(A[31] ^ B[31])) ^ (FOUT[31]);
     
     end // always @(*)
     

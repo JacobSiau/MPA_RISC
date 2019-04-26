@@ -16,7 +16,8 @@ module homework5_risc_branch_logic_module(
     // MUXC
     always @(*) begin
     
-        logic <= {BS[1], (((PS ^ Z)|BS[1])&BS[0])};
+         logic <= {BS[1], (((PS ^ Z)|BS[1])&BS[0])};
+        // logic <= {(((PS ^ Z)|BS[1])&BS[0]), BS[1]};
         
         case (logic)
             2'd0: PC <= PC_1;

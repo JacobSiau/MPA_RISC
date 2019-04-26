@@ -32,7 +32,9 @@ module homework5_risc_function_unit(
     // BARREL SHIFTER
     homework5_risc_barrel_shifter SHIFTER (
         .AIN(A),
+        .BIN(B),
         .SH({1'b0, SH}),
+        .FTN(FS[3:1]),
         .LEFT_NOTRIGHT(!FS[0]),
         .AOUT(SHIFT_OUT)
     );
