@@ -3,28 +3,28 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="homework5_risc_top_tb_behav.wdb" id="1">
+      <db_ref path="top_module_tb_behav.wdb" id="1">
          <top_modules>
             <top_module name="glbl" />
-            <top_module name="homework5_risc_top_tb" />
+            <top_module name="top_module_tb" />
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="3389498778fs"></ZoomStartTime>
-      <ZoomEndTime time="3472926653fs"></ZoomEndTime>
-      <Cursor1Time time="3425000000fs"></Cursor1Time>
+      <ZoomStartTime time="10939500000fs"></ZoomStartTime>
+      <ZoomEndTime time="11012100001fs"></ZoomEndTime>
+      <Cursor1Time time="10979800000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="153"></NameColumnWidth>
-      <ValueColumnWidth column_width="85"></ValueColumnWidth>
+      <NameColumnWidth column_width="136"></NameColumnWidth>
+      <ValueColumnWidth column_width="89"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="68" />
-   <wvobject fp_name="/homework5_risc_top_tb/CLK" type="logic">
+   <wvobject fp_name="/top_module_tb/CLK" type="logic">
       <obj_property name="ElementShortName">CLK</obj_property>
       <obj_property name="ObjectShortName">CLK</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/RST" type="logic">
+   <wvobject fp_name="/top_module_tb/RST" type="logic">
       <obj_property name="ElementShortName">RST</obj_property>
       <obj_property name="ObjectShortName">RST</obj_property>
       <obj_property name="CustomSignalColor">#A0A0A4</obj_property>
@@ -35,42 +35,45 @@
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="BkColor">#800000</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/PC" type="array">
-      <obj_property name="ElementShortName">PC[7:0]</obj_property>
-      <obj_property name="ObjectShortName">PC[7:0]</obj_property>
+   <wvobject fp_name="/top_module_tb/UUT/PC_0" type="array">
+      <obj_property name="ElementShortName">PC_0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_0[31:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       <obj_property name="CustomSignalColor">#800000</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/HA" type="logic">
+   <wvobject fp_name="/top_module_tb/UUT/HA" type="logic">
       <obj_property name="ElementShortName">HA</obj_property>
       <obj_property name="ObjectShortName">HA</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/HB" type="logic">
+   <wvobject fp_name="/top_module_tb/UUT/HB" type="logic">
       <obj_property name="ElementShortName">HB</obj_property>
       <obj_property name="ObjectShortName">HB</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/branchBeingTaken" type="logic">
-      <obj_property name="ElementShortName">branchBeingTaken</obj_property>
-      <obj_property name="ObjectShortName">branchBeingTaken</obj_property>
+   <wvobject fp_name="/top_module_tb/UUT/isBranch" type="logic">
+      <obj_property name="ElementShortName">isBranch</obj_property>
+      <obj_property name="ObjectShortName">isBranch</obj_property>
    </wvobject>
    <wvobject type="divider" fp_name="divider850">
       <obj_property name="label">FETCH</obj_property>
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="BkColor">#008080</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/PC_reg" type="array">
-      <obj_property name="ElementShortName">PC_reg[7:0]</obj_property>
-      <obj_property name="ObjectShortName">PC_reg[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/PC_1" type="array">
-      <obj_property name="ElementShortName">PC_1[7:0]</obj_property>
-      <obj_property name="ObjectShortName">PC_1[7:0]</obj_property>
+   <wvobject fp_name="/top_module_tb/UUT/PC_0_reg" type="array">
+      <obj_property name="ElementShortName">PC_0_reg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_0_reg[31:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       <obj_property name="CustomSignalColor">#008080</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/IR" type="array">
+   <wvobject fp_name="/top_module_tb/UUT/PC_1" type="array">
+      <obj_property name="ElementShortName">PC_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_1[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module_tb/UUT/IR" type="array">
       <obj_property name="ElementShortName">IR[31:0]</obj_property>
       <obj_property name="ObjectShortName">IR[31:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
@@ -82,39 +85,39 @@
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="BkColor">#FFA500</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/PC_1_reg" type="array">
-      <obj_property name="ElementShortName">PC_1_reg[7:0]</obj_property>
-      <obj_property name="ObjectShortName">PC_1_reg[7:0]</obj_property>
+   <wvobject fp_name="/top_module_tb/UUT/PC_1_reg" type="array">
+      <obj_property name="ElementShortName">PC_1_reg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_1_reg[31:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       <obj_property name="CustomSignalColor">#FFA500</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/PC_2" type="array">
-      <obj_property name="ElementShortName">PC_2[7:0]</obj_property>
-      <obj_property name="ObjectShortName">PC_2[7:0]</obj_property>
+   <wvobject fp_name="/top_module_tb/UUT/PC_2" type="array">
+      <obj_property name="ElementShortName">PC_2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_2[31:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       <obj_property name="CustomSignalColor">#FFA500</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/IR_reg" type="array">
+   <wvobject fp_name="/top_module_tb/UUT/IR_reg" type="array">
       <obj_property name="ElementShortName">IR_reg[31:0]</obj_property>
       <obj_property name="ObjectShortName">IR_reg[31:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="CustomSignalColor">#FFA500</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/RW" type="logic">
+   <wvobject fp_name="/top_module_tb/UUT/RW" type="logic">
       <obj_property name="ElementShortName">RW</obj_property>
       <obj_property name="ObjectShortName">RW</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/DA" type="array">
-      <obj_property name="ElementShortName">DA[4:0]</obj_property>
-      <obj_property name="ObjectShortName">DA[4:0]</obj_property>
+   <wvobject fp_name="/top_module_tb/UUT/D_add" type="array">
+      <obj_property name="ElementShortName">D_add[4:0]</obj_property>
+      <obj_property name="ObjectShortName">D_add[4:0]</obj_property>
       <obj_property name="Radix">BINARYRADIX</obj_property>
       <obj_property name="CustomSignalColor">#FFA500</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/MD" type="array">
+   <wvobject fp_name="/top_module_tb/UUT/MD" type="array">
       <obj_property name="ElementShortName">MD[1:0]</obj_property>
       <obj_property name="ObjectShortName">MD[1:0]</obj_property>
       <obj_property name="Radix">BINARYRADIX</obj_property>
@@ -122,7 +125,7 @@
       <obj_property name="UseCustomSignalColor">true</obj_property>
       <obj_property name="isExpanded"></obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/BS" type="array">
+   <wvobject fp_name="/top_module_tb/UUT/BS" type="array">
       <obj_property name="ElementShortName">BS[1:0]</obj_property>
       <obj_property name="ObjectShortName">BS[1:0]</obj_property>
       <obj_property name="Radix">BINARYRADIX</obj_property>
@@ -130,91 +133,91 @@
       <obj_property name="UseCustomSignalColor">true</obj_property>
       <obj_property name="Reversed">false</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/PS" type="logic">
+   <wvobject fp_name="/top_module_tb/UUT/PS" type="logic">
       <obj_property name="ElementShortName">PS</obj_property>
       <obj_property name="ObjectShortName">PS</obj_property>
       <obj_property name="CustomSignalColor">#FFA500</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/MW" type="logic">
+   <wvobject fp_name="/top_module_tb/UUT/MW" type="logic">
       <obj_property name="ElementShortName">MW</obj_property>
       <obj_property name="ObjectShortName">MW</obj_property>
       <obj_property name="CustomSignalColor">#FFA500</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/FS" type="array">
+   <wvobject fp_name="/top_module_tb/UUT/FS" type="array">
       <obj_property name="ElementShortName">FS[4:0]</obj_property>
       <obj_property name="ObjectShortName">FS[4:0]</obj_property>
       <obj_property name="Radix">BINARYRADIX</obj_property>
       <obj_property name="CustomSignalColor">#FFA500</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/SH" type="array">
+   <wvobject fp_name="/top_module_tb/UUT/SH" type="array">
       <obj_property name="ElementShortName">SH[4:0]</obj_property>
       <obj_property name="ObjectShortName">SH[4:0]</obj_property>
       <obj_property name="Radix">BINARYRADIX</obj_property>
       <obj_property name="CustomSignalColor">#FFA500</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/DOF/CS" type="logic">
+   <wvobject fp_name="/top_module_tb/UUT/ID/CS" type="logic">
       <obj_property name="ElementShortName">CS</obj_property>
       <obj_property name="ObjectShortName">CS</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/DOF/IM_reg" type="array">
-      <obj_property name="ElementShortName">IM_reg[14:0]</obj_property>
-      <obj_property name="ObjectShortName">IM_reg[14:0]</obj_property>
+   <wvobject fp_name="/top_module_tb/UUT/ID/Immediate_reg" type="array">
+      <obj_property name="ElementShortName">Immediate_reg[14:0]</obj_property>
+      <obj_property name="ObjectShortName">Immediate_reg[14:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/AA" type="array">
-      <obj_property name="ElementShortName">AA[4:0]</obj_property>
-      <obj_property name="ObjectShortName">AA[4:0]</obj_property>
+   <wvobject fp_name="/top_module_tb/UUT/A_add" type="array">
+      <obj_property name="ElementShortName">A_add[4:0]</obj_property>
+      <obj_property name="ObjectShortName">A_add[4:0]</obj_property>
       <obj_property name="Radix">BINARYRADIX</obj_property>
       <obj_property name="CustomSignalColor">#FFA500</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/BA" type="array">
-      <obj_property name="ElementShortName">BA[4:0]</obj_property>
-      <obj_property name="ObjectShortName">BA[4:0]</obj_property>
+   <wvobject fp_name="/top_module_tb/UUT/B_add" type="array">
+      <obj_property name="ElementShortName">B_add[4:0]</obj_property>
+      <obj_property name="ObjectShortName">B_add[4:0]</obj_property>
       <obj_property name="Radix">BINARYRADIX</obj_property>
       <obj_property name="CustomSignalColor">#FFA500</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/AOUT" type="array">
-      <obj_property name="ElementShortName">AOUT[31:0]</obj_property>
-      <obj_property name="ObjectShortName">AOUT[31:0]</obj_property>
+   <wvobject fp_name="/top_module_tb/UUT/A_data" type="array">
+      <obj_property name="ElementShortName">A_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">A_data[31:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="CustomSignalColor">#FFA500</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/BOUT" type="array">
-      <obj_property name="ElementShortName">BOUT[31:0]</obj_property>
-      <obj_property name="ObjectShortName">BOUT[31:0]</obj_property>
+   <wvobject fp_name="/top_module_tb/UUT/B_data" type="array">
+      <obj_property name="ElementShortName">B_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">B_data[31:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="CustomSignalColor">#FFA500</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/BUS_DD" type="array">
-      <obj_property name="ElementShortName">BUS_DD[31:0]</obj_property>
-      <obj_property name="ObjectShortName">BUS_DD[31:0]</obj_property>
+   <wvobject fp_name="/top_module_tb/UUT/D_bus_c" type="array">
+      <obj_property name="ElementShortName">D_bus_c[31:0]</obj_property>
+      <obj_property name="ObjectShortName">D_bus_c[31:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/DOF/MA" type="logic">
+   <wvobject fp_name="/top_module_tb/UUT/ID/MA" type="logic">
       <obj_property name="ElementShortName">MA</obj_property>
       <obj_property name="ObjectShortName">MA</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/DOF/MB" type="logic">
+   <wvobject fp_name="/top_module_tb/UUT/ID/MB" type="logic">
       <obj_property name="ElementShortName">MB</obj_property>
       <obj_property name="ObjectShortName">MB</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/BUS_A" type="array">
-      <obj_property name="ElementShortName">BUS_A[31:0]</obj_property>
-      <obj_property name="ObjectShortName">BUS_A[31:0]</obj_property>
+   <wvobject fp_name="/top_module_tb/UUT/A_bus" type="array">
+      <obj_property name="ElementShortName">A_bus[31:0]</obj_property>
+      <obj_property name="ObjectShortName">A_bus[31:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="CustomSignalColor">#FFA500</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/BUS_B" type="array">
-      <obj_property name="ElementShortName">BUS_B[31:0]</obj_property>
-      <obj_property name="ObjectShortName">BUS_B[31:0]</obj_property>
+   <wvobject fp_name="/top_module_tb/UUT/B_bus" type="array">
+      <obj_property name="ElementShortName">B_bus[31:0]</obj_property>
+      <obj_property name="ObjectShortName">B_bus[31:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="CustomSignalColor">#FFA500</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
@@ -224,34 +227,34 @@
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="BkColor">#FF00FF</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/PC_2_reg" type="array">
-      <obj_property name="ElementShortName">PC_2_reg[7:0]</obj_property>
-      <obj_property name="ObjectShortName">PC_2_reg[7:0]</obj_property>
+   <wvobject fp_name="/top_module_tb/UUT/PC_2_reg" type="array">
+      <obj_property name="ElementShortName">PC_2_reg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_2_reg[31:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       <obj_property name="CustomSignalColor">#FF00FF</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/RW_reg" type="logic">
+   <wvobject fp_name="/top_module_tb/UUT/RW_reg" type="logic">
       <obj_property name="ElementShortName">RW_reg</obj_property>
       <obj_property name="ObjectShortName">RW_reg</obj_property>
       <obj_property name="CustomSignalColor">#FF00FF</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/DA_reg" type="array">
-      <obj_property name="ElementShortName">DA_reg[4:0]</obj_property>
-      <obj_property name="ObjectShortName">DA_reg[4:0]</obj_property>
+   <wvobject fp_name="/top_module_tb/UUT/D_add_reg" type="array">
+      <obj_property name="ElementShortName">D_add_reg[4:0]</obj_property>
+      <obj_property name="ObjectShortName">D_add_reg[4:0]</obj_property>
       <obj_property name="Radix">BINARYRADIX</obj_property>
       <obj_property name="CustomSignalColor">#FF00FF</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/MD_reg" type="array">
+   <wvobject fp_name="/top_module_tb/UUT/MD_reg" type="array">
       <obj_property name="ElementShortName">MD_reg[1:0]</obj_property>
       <obj_property name="ObjectShortName">MD_reg[1:0]</obj_property>
       <obj_property name="Radix">BINARYRADIX</obj_property>
       <obj_property name="CustomSignalColor">#FF00FF</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/BS_reg" type="array">
+   <wvobject fp_name="/top_module_tb/UUT/BS_reg" type="array">
       <obj_property name="ElementShortName">BS_reg[1:0]</obj_property>
       <obj_property name="ObjectShortName">BS_reg[1:0]</obj_property>
       <obj_property name="Radix">BINARYRADIX</obj_property>
@@ -259,109 +262,109 @@
       <obj_property name="UseCustomSignalColor">true</obj_property>
       <obj_property name="Reversed">false</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/PS_reg" type="logic">
+   <wvobject fp_name="/top_module_tb/UUT/PS_reg" type="logic">
       <obj_property name="ElementShortName">PS_reg</obj_property>
       <obj_property name="ObjectShortName">PS_reg</obj_property>
       <obj_property name="CustomSignalColor">#FF00FF</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/MW_reg" type="logic">
+   <wvobject fp_name="/top_module_tb/UUT/MW_reg" type="logic">
       <obj_property name="ElementShortName">MW_reg</obj_property>
       <obj_property name="ObjectShortName">MW_reg</obj_property>
       <obj_property name="CustomSignalColor">#FF00FF</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/FS_reg" type="array">
+   <wvobject fp_name="/top_module_tb/UUT/FS_reg" type="array">
       <obj_property name="ElementShortName">FS_reg[4:0]</obj_property>
       <obj_property name="ObjectShortName">FS_reg[4:0]</obj_property>
       <obj_property name="Radix">BINARYRADIX</obj_property>
       <obj_property name="CustomSignalColor">#FF00FF</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/SH_reg" type="array">
+   <wvobject fp_name="/top_module_tb/UUT/SH_reg" type="array">
       <obj_property name="ElementShortName">SH_reg[4:0]</obj_property>
       <obj_property name="ObjectShortName">SH_reg[4:0]</obj_property>
       <obj_property name="Radix">BINARYRADIX</obj_property>
       <obj_property name="CustomSignalColor">#FF00FF</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/BUS_A_reg" type="array">
-      <obj_property name="ElementShortName">BUS_A_reg[31:0]</obj_property>
-      <obj_property name="ObjectShortName">BUS_A_reg[31:0]</obj_property>
+   <wvobject fp_name="/top_module_tb/UUT/A_bus_reg" type="array">
+      <obj_property name="ElementShortName">A_bus_reg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">A_bus_reg[31:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="CustomSignalColor">#FF00FF</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/BUS_B_reg" type="array">
-      <obj_property name="ElementShortName">BUS_B_reg[31:0]</obj_property>
-      <obj_property name="ObjectShortName">BUS_B_reg[31:0]</obj_property>
+   <wvobject fp_name="/top_module_tb/UUT/B_bus_reg" type="array">
+      <obj_property name="ElementShortName">B_bus_reg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">B_bus_reg[31:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="CustomSignalColor">#FF00FF</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/BrA" type="array">
+   <wvobject fp_name="/top_module_tb/UUT/BrA" type="array">
       <obj_property name="ElementShortName">BrA[31:0]</obj_property>
       <obj_property name="ObjectShortName">BrA[31:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       <obj_property name="CustomSignalColor">#FF00FF</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/RAA" type="array">
+   <wvobject fp_name="/top_module_tb/UUT/RAA" type="array">
       <obj_property name="ElementShortName">RAA[31:0]</obj_property>
       <obj_property name="ObjectShortName">RAA[31:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       <obj_property name="CustomSignalColor">#FF00FF</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/MUXC/logic" type="array">
-      <obj_property name="ElementShortName">logic[1:0]</obj_property>
-      <obj_property name="ObjectShortName">logic[1:0]</obj_property>
+   <wvobject fp_name="/top_module_tb/UUT/BL/B_logic" type="array">
+      <obj_property name="ElementShortName">B_logic[1:0]</obj_property>
+      <obj_property name="ObjectShortName">B_logic[1:0]</obj_property>
       <obj_property name="Radix">BINARYRADIX</obj_property>
       <obj_property name="Reversed">false</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/RW_1" type="logic">
+   <wvobject fp_name="/top_module_tb/UUT/RW_1" type="logic">
       <obj_property name="ElementShortName">RW_1</obj_property>
       <obj_property name="ObjectShortName">RW_1</obj_property>
       <obj_property name="CustomSignalColor">#FF00FF</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/DA_1" type="array">
-      <obj_property name="ElementShortName">DA_1[4:0]</obj_property>
-      <obj_property name="ObjectShortName">DA_1[4:0]</obj_property>
+   <wvobject fp_name="/top_module_tb/UUT/D_add_1" type="array">
+      <obj_property name="ElementShortName">D_add_1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">D_add_1[4:0]</obj_property>
       <obj_property name="Radix">BINARYRADIX</obj_property>
       <obj_property name="CustomSignalColor">#FF00FF</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/MD_1" type="array">
+   <wvobject fp_name="/top_module_tb/UUT/MD_1" type="array">
       <obj_property name="ElementShortName">MD_1[1:0]</obj_property>
       <obj_property name="ObjectShortName">MD_1[1:0]</obj_property>
       <obj_property name="Radix">BINARYRADIX</obj_property>
       <obj_property name="CustomSignalColor">#FF00FF</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/NXORV" type="logic">
-      <obj_property name="ElementShortName">NXORV</obj_property>
-      <obj_property name="ObjectShortName">NXORV</obj_property>
+   <wvobject fp_name="/top_module_tb/UUT/NV_xor" type="logic">
+      <obj_property name="ElementShortName">NV_xor</obj_property>
+      <obj_property name="ObjectShortName">NV_xor</obj_property>
       <obj_property name="CustomSignalColor">#FF00FF</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/ZVNC" type="array">
+   <wvobject fp_name="/top_module_tb/UUT/ZVNC" type="array">
       <obj_property name="ElementShortName">ZVNC[3:0]</obj_property>
       <obj_property name="ObjectShortName">ZVNC[3:0]</obj_property>
       <obj_property name="Radix">BINARYRADIX</obj_property>
       <obj_property name="CustomSignalColor">#FF00FF</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/FOUT" type="array">
-      <obj_property name="ElementShortName">FOUT[31:0]</obj_property>
-      <obj_property name="ObjectShortName">FOUT[31:0]</obj_property>
+   <wvobject fp_name="/top_module_tb/UUT/F_out" type="array">
+      <obj_property name="ElementShortName">F_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">F_out[31:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="CustomSignalColor">#FF00FF</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/DOUT" type="array">
-      <obj_property name="ElementShortName">DOUT[31:0]</obj_property>
-      <obj_property name="ObjectShortName">DOUT[31:0]</obj_property>
+   <wvobject fp_name="/top_module_tb/UUT/D_out" type="array">
+      <obj_property name="ElementShortName">D_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">D_out[31:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="CustomSignalColor">#FF00FF</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
@@ -371,45 +374,45 @@
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="BkColor">#008000</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/RW_1_reg" type="logic">
+   <wvobject fp_name="/top_module_tb/UUT/RW_1_reg" type="logic">
       <obj_property name="ElementShortName">RW_1_reg</obj_property>
       <obj_property name="ObjectShortName">RW_1_reg</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/DA_1_reg" type="array">
-      <obj_property name="ElementShortName">DA_1_reg[4:0]</obj_property>
-      <obj_property name="ObjectShortName">DA_1_reg[4:0]</obj_property>
+   <wvobject fp_name="/top_module_tb/UUT/D_add_1_reg" type="array">
+      <obj_property name="ElementShortName">D_add_1_reg[4:0]</obj_property>
+      <obj_property name="ObjectShortName">D_add_1_reg[4:0]</obj_property>
       <obj_property name="Radix">BINARYRADIX</obj_property>
       <obj_property name="CustomSignalColor">#008000</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/MD_1_reg" type="array">
+   <wvobject fp_name="/top_module_tb/UUT/MD_1_reg" type="array">
       <obj_property name="ElementShortName">MD_1_reg[1:0]</obj_property>
       <obj_property name="ObjectShortName">MD_1_reg[1:0]</obj_property>
       <obj_property name="Radix">BINARYRADIX</obj_property>
       <obj_property name="CustomSignalColor">#008000</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/NXORV_reg" type="logic">
-      <obj_property name="ElementShortName">NXORV_reg</obj_property>
-      <obj_property name="ObjectShortName">NXORV_reg</obj_property>
+   <wvobject fp_name="/top_module_tb/UUT/NV_xor_reg" type="logic">
+      <obj_property name="ElementShortName">NV_xor_reg</obj_property>
+      <obj_property name="ObjectShortName">NV_xor_reg</obj_property>
       <obj_property name="CustomSignalColor">#008000</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/FOUT_reg" type="array">
-      <obj_property name="ElementShortName">FOUT_reg[31:0]</obj_property>
-      <obj_property name="ObjectShortName">FOUT_reg[31:0]</obj_property>
+   <wvobject fp_name="/top_module_tb/UUT/F_out_reg" type="array">
+      <obj_property name="ElementShortName">F_out_reg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">F_out_reg[31:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="CustomSignalColor">#008000</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/DOUT_reg" type="array">
-      <obj_property name="ElementShortName">DOUT_reg[31:0]</obj_property>
-      <obj_property name="ObjectShortName">DOUT_reg[31:0]</obj_property>
+   <wvobject fp_name="/top_module_tb/UUT/D_out_reg" type="array">
+      <obj_property name="ElementShortName">D_out_reg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">D_out_reg[31:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="CustomSignalColor">#008000</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/ZVNC_reg" type="array">
+   <wvobject fp_name="/top_module_tb/UUT/ZVNC_reg" type="array">
       <obj_property name="ElementShortName">ZVNC_reg[3:0]</obj_property>
       <obj_property name="ObjectShortName">ZVNC_reg[3:0]</obj_property>
       <obj_property name="Radix">BINARYRADIX</obj_property>
@@ -421,160 +424,154 @@
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="BkColor">#00FFFF</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/REGFILE/REGFILE" type="array">
-      <obj_property name="ElementShortName">REGFILE[31:0][31:0]</obj_property>
-      <obj_property name="ObjectShortName">REGFILE[31:0][31:0]</obj_property>
+   <wvobject fp_name="/top_module_tb/UUT/REGFILE/REG_file" type="array">
+      <obj_property name="ElementShortName">REG_file[31:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">REG_file[31:0][31:0]</obj_property>
       <obj_property name="CustomSignalColor">#00FFFF</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
       <obj_property name="isExpanded"></obj_property>
-      <wvobject fp_name="/homework5_risc_top_tb/UUT/REGFILE/REGFILE[31]" type="array">
+      <wvobject fp_name="/top_module_tb/UUT/REGFILE/REG_file[31]" type="array">
          <obj_property name="ElementShortName">[31][31:0]</obj_property>
          <obj_property name="ObjectShortName">[31][31:0]</obj_property>
       </wvobject>
-      <wvobject fp_name="/homework5_risc_top_tb/UUT/REGFILE/REGFILE[30]" type="array">
+      <wvobject fp_name="/top_module_tb/UUT/REGFILE/REG_file[30]" type="array">
          <obj_property name="ElementShortName">[30][31:0]</obj_property>
          <obj_property name="ObjectShortName">[30][31:0]</obj_property>
       </wvobject>
-      <wvobject fp_name="/homework5_risc_top_tb/UUT/REGFILE/REGFILE[29]" type="array">
+      <wvobject fp_name="/top_module_tb/UUT/REGFILE/REG_file[29]" type="array">
          <obj_property name="ElementShortName">[29][31:0]</obj_property>
          <obj_property name="ObjectShortName">[29][31:0]</obj_property>
       </wvobject>
-      <wvobject fp_name="/homework5_risc_top_tb/UUT/REGFILE/REGFILE[28]" type="array">
+      <wvobject fp_name="/top_module_tb/UUT/REGFILE/REG_file[28]" type="array">
          <obj_property name="ElementShortName">[28][31:0]</obj_property>
          <obj_property name="ObjectShortName">[28][31:0]</obj_property>
       </wvobject>
-      <wvobject fp_name="/homework5_risc_top_tb/UUT/REGFILE/REGFILE[27]" type="array">
+      <wvobject fp_name="/top_module_tb/UUT/REGFILE/REG_file[27]" type="array">
          <obj_property name="ElementShortName">[27][31:0]</obj_property>
          <obj_property name="ObjectShortName">[27][31:0]</obj_property>
       </wvobject>
-      <wvobject fp_name="/homework5_risc_top_tb/UUT/REGFILE/REGFILE[26]" type="array">
+      <wvobject fp_name="/top_module_tb/UUT/REGFILE/REG_file[26]" type="array">
          <obj_property name="ElementShortName">[26][31:0]</obj_property>
          <obj_property name="ObjectShortName">[26][31:0]</obj_property>
       </wvobject>
-      <wvobject fp_name="/homework5_risc_top_tb/UUT/REGFILE/REGFILE[25]" type="array">
+      <wvobject fp_name="/top_module_tb/UUT/REGFILE/REG_file[25]" type="array">
          <obj_property name="ElementShortName">[25][31:0]</obj_property>
          <obj_property name="ObjectShortName">[25][31:0]</obj_property>
       </wvobject>
-      <wvobject fp_name="/homework5_risc_top_tb/UUT/REGFILE/REGFILE[24]" type="array">
+      <wvobject fp_name="/top_module_tb/UUT/REGFILE/REG_file[24]" type="array">
          <obj_property name="ElementShortName">[24][31:0]</obj_property>
          <obj_property name="ObjectShortName">[24][31:0]</obj_property>
       </wvobject>
-      <wvobject fp_name="/homework5_risc_top_tb/UUT/REGFILE/REGFILE[23]" type="array">
+      <wvobject fp_name="/top_module_tb/UUT/REGFILE/REG_file[23]" type="array">
          <obj_property name="ElementShortName">[23][31:0]</obj_property>
          <obj_property name="ObjectShortName">[23][31:0]</obj_property>
       </wvobject>
-      <wvobject fp_name="/homework5_risc_top_tb/UUT/REGFILE/REGFILE[22]" type="array">
+      <wvobject fp_name="/top_module_tb/UUT/REGFILE/REG_file[22]" type="array">
          <obj_property name="ElementShortName">[22][31:0]</obj_property>
          <obj_property name="ObjectShortName">[22][31:0]</obj_property>
       </wvobject>
-      <wvobject fp_name="/homework5_risc_top_tb/UUT/REGFILE/REGFILE[21]" type="array">
-         <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/top_module_tb/UUT/REGFILE/REG_file[21]" type="array">
          <obj_property name="ElementShortName">[21][31:0]</obj_property>
          <obj_property name="ObjectShortName">[21][31:0]</obj_property>
-         <obj_property name="label">ANS_HIGH</obj_property>
       </wvobject>
-      <wvobject fp_name="/homework5_risc_top_tb/UUT/REGFILE/REGFILE[20]" type="array">
-         <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/top_module_tb/UUT/REGFILE/REG_file[20]" type="array">
          <obj_property name="ElementShortName">[20][31:0]</obj_property>
          <obj_property name="ObjectShortName">[20][31:0]</obj_property>
-         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-         <obj_property name="label">ANS_LOW</obj_property>
       </wvobject>
-      <wvobject fp_name="/homework5_risc_top_tb/UUT/REGFILE/REGFILE[19]" type="array">
-         <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/top_module_tb/UUT/REGFILE/REG_file[19]" type="array">
          <obj_property name="ElementShortName">[19][31:0]</obj_property>
          <obj_property name="ObjectShortName">[19][31:0]</obj_property>
-         <obj_property name="label">X</obj_property>
       </wvobject>
-      <wvobject fp_name="/homework5_risc_top_tb/UUT/REGFILE/REGFILE[18]" type="array">
-         <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/top_module_tb/UUT/REGFILE/REG_file[18]" type="array">
          <obj_property name="ElementShortName">[18][31:0]</obj_property>
          <obj_property name="ObjectShortName">[18][31:0]</obj_property>
-         <obj_property name="label">Y</obj_property>
       </wvobject>
-      <wvobject fp_name="/homework5_risc_top_tb/UUT/REGFILE/REGFILE[17]" type="array">
-         <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/top_module_tb/UUT/REGFILE/REG_file[17]" type="array">
          <obj_property name="ElementShortName">[17][31:0]</obj_property>
          <obj_property name="ObjectShortName">[17][31:0]</obj_property>
-         <obj_property name="label">COUNT</obj_property>
       </wvobject>
-      <wvobject fp_name="/homework5_risc_top_tb/UUT/REGFILE/REGFILE[16]" type="array">
-         <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/top_module_tb/UUT/REGFILE/REG_file[16]" type="array">
          <obj_property name="ElementShortName">[16][31:0]</obj_property>
          <obj_property name="ObjectShortName">[16][31:0]</obj_property>
-         <obj_property name="label">NEG_MASK</obj_property>
-         <obj_property name="Radix">BINARYRADIX</obj_property>
       </wvobject>
-      <wvobject fp_name="/homework5_risc_top_tb/UUT/REGFILE/REGFILE[15]" type="array">
-         <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/top_module_tb/UUT/REGFILE/REG_file[15]" type="array">
          <obj_property name="ElementShortName">[15][31:0]</obj_property>
          <obj_property name="ObjectShortName">[15][31:0]</obj_property>
-         <obj_property name="label">TEST_LOW</obj_property>
       </wvobject>
-      <wvobject fp_name="/homework5_risc_top_tb/UUT/REGFILE/REGFILE[14]" type="array">
+      <wvobject fp_name="/top_module_tb/UUT/REGFILE/REG_file[14]" type="array">
          <obj_property name="ElementShortName">[14][31:0]</obj_property>
          <obj_property name="ObjectShortName">[14][31:0]</obj_property>
-         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
       </wvobject>
-      <wvobject fp_name="/homework5_risc_top_tb/UUT/REGFILE/REGFILE[13]" type="array">
+      <wvobject fp_name="/top_module_tb/UUT/REGFILE/REG_file[13]" type="array">
          <obj_property name="ElementShortName">[13][31:0]</obj_property>
          <obj_property name="ObjectShortName">[13][31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
-      <wvobject fp_name="/homework5_risc_top_tb/UUT/REGFILE/REGFILE[12]" type="array">
+      <wvobject fp_name="/top_module_tb/UUT/REGFILE/REG_file[12]" type="array">
          <obj_property name="ElementShortName">[12][31:0]</obj_property>
          <obj_property name="ObjectShortName">[12][31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
-      <wvobject fp_name="/homework5_risc_top_tb/UUT/REGFILE/REGFILE[11]" type="array">
+      <wvobject fp_name="/top_module_tb/UUT/REGFILE/REG_file[11]" type="array">
          <obj_property name="ElementShortName">[11][31:0]</obj_property>
          <obj_property name="ObjectShortName">[11][31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
-      <wvobject fp_name="/homework5_risc_top_tb/UUT/REGFILE/REGFILE[10]" type="array">
+      <wvobject fp_name="/top_module_tb/UUT/REGFILE/REG_file[10]" type="array">
          <obj_property name="ElementShortName">[10][31:0]</obj_property>
          <obj_property name="ObjectShortName">[10][31:0]</obj_property>
          <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
-      <wvobject fp_name="/homework5_risc_top_tb/UUT/REGFILE/REGFILE[9]" type="array">
+      <wvobject fp_name="/top_module_tb/UUT/REGFILE/REG_file[9]" type="array">
          <obj_property name="ElementShortName">[9][31:0]</obj_property>
          <obj_property name="ObjectShortName">[9][31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
-      <wvobject fp_name="/homework5_risc_top_tb/UUT/REGFILE/REGFILE[8]" type="array">
+      <wvobject fp_name="/top_module_tb/UUT/REGFILE/REG_file[8]" type="array">
          <obj_property name="ElementShortName">[8][31:0]</obj_property>
          <obj_property name="ObjectShortName">[8][31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
-      <wvobject fp_name="/homework5_risc_top_tb/UUT/REGFILE/REGFILE[7]" type="array">
+      <wvobject fp_name="/top_module_tb/UUT/REGFILE/REG_file[7]" type="array">
          <obj_property name="ElementShortName">[7][31:0]</obj_property>
          <obj_property name="ObjectShortName">[7][31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
-      <wvobject fp_name="/homework5_risc_top_tb/UUT/REGFILE/REGFILE[6]" type="array">
+      <wvobject fp_name="/top_module_tb/UUT/REGFILE/REG_file[6]" type="array">
          <obj_property name="ElementShortName">[6][31:0]</obj_property>
          <obj_property name="ObjectShortName">[6][31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
-      <wvobject fp_name="/homework5_risc_top_tb/UUT/REGFILE/REGFILE[5]" type="array">
+      <wvobject fp_name="/top_module_tb/UUT/REGFILE/REG_file[5]" type="array">
          <obj_property name="ElementShortName">[5][31:0]</obj_property>
          <obj_property name="ObjectShortName">[5][31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
-      <wvobject fp_name="/homework5_risc_top_tb/UUT/REGFILE/REGFILE[4]" type="array">
+      <wvobject fp_name="/top_module_tb/UUT/REGFILE/REG_file[4]" type="array">
          <obj_property name="ElementShortName">[4][31:0]</obj_property>
          <obj_property name="ObjectShortName">[4][31:0]</obj_property>
          <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
-      <wvobject fp_name="/homework5_risc_top_tb/UUT/REGFILE/REGFILE[3]" type="array">
+      <wvobject fp_name="/top_module_tb/UUT/REGFILE/REG_file[3]" type="array">
          <obj_property name="ElementShortName">[3][31:0]</obj_property>
          <obj_property name="ObjectShortName">[3][31:0]</obj_property>
          <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
-      <wvobject fp_name="/homework5_risc_top_tb/UUT/REGFILE/REGFILE[2]" type="array">
+      <wvobject fp_name="/top_module_tb/UUT/REGFILE/REG_file[2]" type="array">
          <obj_property name="ElementShortName">[2][31:0]</obj_property>
          <obj_property name="ObjectShortName">[2][31:0]</obj_property>
          <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
-      <wvobject fp_name="/homework5_risc_top_tb/UUT/REGFILE/REGFILE[1]" type="array">
+      <wvobject fp_name="/top_module_tb/UUT/REGFILE/REG_file[1]" type="array">
          <obj_property name="ElementShortName">[1][31:0]</obj_property>
          <obj_property name="ObjectShortName">[1][31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
-      <wvobject fp_name="/homework5_risc_top_tb/UUT/REGFILE/REGFILE[0]" type="array">
+      <wvobject fp_name="/top_module_tb/UUT/REGFILE/REG_file[0]" type="array">
          <obj_property name="ElementShortName">[0][31:0]</obj_property>
          <obj_property name="ObjectShortName">[0][31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
    </wvobject>
    <wvobject type="divider" fp_name="divider854">
@@ -582,8 +579,9 @@
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="BkColor">#00FF7F</obj_property>
    </wvobject>
-   <wvobject fp_name="/homework5_risc_top_tb/UUT/EX/DATAMEM/datamem" type="array">
-      <obj_property name="ElementShortName">datamem[63:0][31:0]</obj_property>
-      <obj_property name="ObjectShortName">datamem[63:0][31:0]</obj_property>
+   <wvobject fp_name="/top_module_tb/UUT/IE/DM/DATA_mem" type="array">
+      <obj_property name="ElementShortName">DATA_mem[63:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">DATA_mem[63:0][31:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
    </wvobject>
 </wave_config>

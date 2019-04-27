@@ -1,8 +1,9 @@
-//`ifndef _INSTRUCTION_PATTERNS_VH_
-//`define _INSTRUCTION_PATTERNS_VH_
-// parameter NOP = 7'b0000000;
-parameter NOP = 32'b0;
-parameter XXX = 32'bX;
+///////////////////////////////////////////////////////
+// INSTRUCTION PATTERNS
+parameter NOP_PATTERN = 32'b0;
+parameter XXX_PATTERN = 32'bX;
+parameter XXX = 7'bXXXXXXX;
+parameter NOP = 7'b0000000;
 parameter ADD = 7'b0000010;
 parameter SUB = 7'b0000101;
 parameter SLT = 7'b1100101;
@@ -33,13 +34,8 @@ parameter BZ  = 7'b0100000;
 parameter BNZ = 7'b1100000;
 parameter JMP = 7'b1000100;
 parameter JML = 7'b0000111;
-// parameter XXX = 7'bXXXXXXX;
-parameter TESTLSB = 5'b00101; // R5
-parameter COUNT = 5'b01101; // R13
-parameter NEGMASK = 5'b01110; // R14
-parameter A = 5'b01100; // R12
-parameter B = 5'b10100;
-parameter Q = 5'b10101;
+///////////////////////////////////////////////////////
+// REGISTER PATTERNS
 parameter R0  = 5'b00000;
 parameter R1  = 5'b00001;
 parameter R2  = 5'b00010;
@@ -73,4 +69,30 @@ parameter R29 = 5'b11101;
 parameter R30 = 5'b11110;
 parameter R31 = 5'b11111;
 parameter RX  = 5'bXXXXX;
-//`endif
+///////////////////////////////////////////////////////
+// USEFUL BINARY PATTERNS
+parameter ZERO_15 = 15'b0;
+parameter ZERO_10 = 10'b0;
+parameter ONE_15  = 15'b1;
+parameter ONE_10  = 10'b1;
+parameter TWO_15  = 15'd2;
+parameter TWO_10  = 10'd2;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

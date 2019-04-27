@@ -68,7 +68,7 @@ module homework5_risc_top(
     homework5_risc_instruction_fetch_module IF (
         .PC(PC_reg),
         .PC_1(PC_1),
-        .INST(IR)
+        .INSTRUCTION(IR)
     );
     ////////////////////////////////////////////////////////////
     
